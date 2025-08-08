@@ -1,6 +1,6 @@
 {
-    "name": "simple_todo_list",
-    "short_name": "simple_todo_list",
+    "name": "simple",
+    "short_name": "simple",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
