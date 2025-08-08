@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'screens/login_screen.dart';
-import 'screens/home_screen.dart'; // import ของคุณ
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const SimpleTodoApp());
@@ -43,7 +43,7 @@ class _SimpleTodoAppState extends State<SimpleTodoApp> {
       title: 'Simple Login App',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: HomeScreen(
-        onLogout: _handleLogout, // ถ้า HomeScreen รับ onLogout
+        onLogout: _handleLogout,
       ),
     );
   }
