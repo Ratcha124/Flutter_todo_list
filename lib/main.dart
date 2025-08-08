@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'screens/login_screen.dart';
+import 'screens/home_screen.dart'; // import ของคุณ
 
 void main() {
   runApp(const SimpleTodoApp());
@@ -40,20 +42,8 @@ class _SimpleTodoAppState extends State<SimpleTodoApp> {
     return MaterialApp(
       title: 'Simple Login App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('ยินดีต้อนรับ $_username'),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.logout),
-              onPressed: _handleLogout,
-              tooltip: 'Logout',
-            ),
-          ],
-        ),
-        body: Center(
-          child: Text('คุณเข้าสู่ระบบเรียบร้อยแล้ว'),
-        ),
+      home: HomeScreen(
+        onLogout: _handleLogout, // ถ้า HomeScreen รับ onLogout
       ),
     );
   }
