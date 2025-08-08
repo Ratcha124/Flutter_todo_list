@@ -16,7 +16,6 @@ class _SimpleTodoAppState extends State<SimpleTodoApp> {
   String? _username;
 
   void _handleLogin(String username, String password) {
-    // สำหรับตอนนี้ยังไม่ตรวจสอบรหัสผ่านจริง
     setState(() {
       _username = username;
     });
@@ -38,7 +37,6 @@ class _SimpleTodoAppState extends State<SimpleTodoApp> {
       );
     }
 
-    // หน้า logged in แบบง่าย ๆ มีปุ่ม Logout
     return MaterialApp(
       title: 'Simple Login App',
       theme: ThemeData(primarySwatch: Colors.blue),
